@@ -9,13 +9,12 @@ int edad,edad2;
 char nombre[20];
 /*se define la variable que te permite capturar el nombre y el numero de caracteres que admite*/
 
-printf("Hola \n*");
-printf("¿cual es tu nombre\n");
-scanf("%s \n*",&nombre);
+printf("Dime tu nombre\n*");
+scanf("%s",&nombre);
 printf("dime tu edad\n");
 scanf("%i",&edad);
 edad2=edad+10;
-printf("\nTu edad en 2028 sera %i \n*, edad2");
+printf("%sTu edad en 2028 sera %i \n",nombre,edad2);
 return 0;
 }
 
