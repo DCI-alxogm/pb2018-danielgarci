@@ -18,7 +18,7 @@ int main()
 		else if (numero1>numero2)
 
 		{
-			printf("Resultado: %i > %i",numero2,numero2);
+			printf("Resultado: %i > %i",numero1,numero2);
 
 		}
 		else 
