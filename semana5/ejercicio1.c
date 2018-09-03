@@ -8,14 +8,14 @@ int main()
 	int A;
 	int B;
 	float C;
-	float D;
+	float d;
 	float exp_a,log_a,sen_a,cos_a,sqrt_a;
 
 
-	printf("Bienvenido, introduce el valor máximo que deseas evaluar\n");
-	scanf("%i",&A);
+	printf("Bienvenido, introduce el valor minimo que deseas evaluar\n");
+	scanf("%i",&d);
 
-	printf("Introduce el valor minimo a evaluar\n");
+	printf("Introduce el valor maximo a evaluar\n");
 
 	scanf("%i",&B);
 
@@ -24,7 +24,7 @@ int main()
 	scanf("%f",&C);
 
 
-	for(A=0;D<B;C++){
+	for(A=d;A<B;A+C){
 		exp_a=exp(D);
 		printf("%f \t exp \n",D,exp_a);
 		log_a=log(D);
