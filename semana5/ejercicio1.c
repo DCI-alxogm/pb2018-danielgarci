@@ -5,16 +5,16 @@ int main()
 
 {
 
-	int xi,xf,esp,i,n;
-	float exp_a,log_a,sen_a,cos_a,sqrt_a;
+	int xi,xf,i,n;
+	float exp_a,log_a,sen_a,cos_a,sqrt_a,esp;
 
 
 	printf("Bienvenido, introduce el valor inicial que deseas evaluar\n");
-	scanf("%i",&xi);
+	scanf("%d",&xi);
 
 	printf("Introduce el valor final a evaluar\n");
 
-	scanf("%i",&xf);
+	scanf("%d",&xf);
 	
 	
 
@@ -25,7 +25,7 @@ int main()
 
 	n=(xf-xi)/esp;
 /*la n dice cuantas veces se va a realizar la operacion*/
-	for(i=0;i<n;i++){/*la i=0 dice que empieza en el cero de los valores del intervalo, no el cero como tal*/
+	for(i=0;i<=n;i+1){/*la i=0 dice que empieza en el cero de los valores del intervalo, no el cero como tal*/
 		exp_a=exp(xi);
 		printf("%f \t exp \n",xi,exp_a);
 		log_a=log(xi);
