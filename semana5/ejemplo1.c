@@ -24,7 +24,7 @@
 		printf("¿Deseas realizar otra operación? si=1/no=2\n");
 		scanf("%i",&w);
 		
-			return 0;
+			
 	}
 	return 0;
 }
