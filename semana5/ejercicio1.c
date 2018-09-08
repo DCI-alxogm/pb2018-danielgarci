@@ -6,7 +6,7 @@ int main()
 {
 
 	int xi,xf,i,n;
-	float exp_a,log_a,sen_a,cos_a,sqrt_a,esp;
+	int exp_a,log_a,sen_a,cos_a,sqrt_a,esp;
 
 
 	printf("Bienvenido, introduce el valor inicial que deseas evaluar\n");
@@ -20,23 +20,30 @@ int main()
 
 	printf("Introduce el intervalo el espaciado entre cada salto\n");
 
-	scanf("%f",&esp);
+	scanf("%d",&esp);
 	
 
-	n=(xf-xi)/esp;
+        n=(xf-xi)/esp;	
+  
+
+
 /*la n dice cuantas veces se va a realizar la operacion*/
-	for(i=0;i<=n;i+1){/*la i=0 dice que empieza en el cero de los valores del intervalo, no el cero como tal*/
-		exp_a=exp(xi);
-		printf("%f \t exp \n",xi,exp_a);
+	for(i=0;i<n;i++)
+              /*la i=0 dice que empieza en el cero de los valores del intervalo, no el cero como tal*/
+	{       
+
+                print("%d",n);
+                /*exp_a=exp(xi);
+		printf("exp de %d \t =%d\n",xi,exp_a);
 		log_a=log(xi);
-		printf("%f \t log \n",xi,log_a);
+		printf("log de %d \t =%d \n",xi,log_a);
 		sen_a=sin(xi);
-		printf("%f \t sen \n",xi,sen_a);
+		printf("log de %d \t =%d \n",xi,sen_a);
 		cos_a=cos(xi);
-		printf("%f \t cos \n",xi,cos_a);
+		printf("cos de %f \t =%d \n",xi,cos_a);
 		sqrt_a=sqrt(xi);
-		printf("%f \t sqrt \n",xi,sqrt_a);
-		xi=xi+esp;/*esta operacion modifica a variable que se va a evaluar en las funciones, es independeiente del contador, pero debe ir acumulando el espaciado*/
+		printf("raiz de %f \t =%d \n",xi,sqrt_a);
+		xi=xi+esp;/*esta operacion modifica a variable que se va a evaluar en las funciones, es independeiente del contador, pero debe ir acumulando el espaciado*/*/
 	}
 
 

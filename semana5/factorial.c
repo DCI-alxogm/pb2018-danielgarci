@@ -22,8 +22,9 @@ int main()
 
 				for(b=a;b>1;b--){
 					fact=fact*b;
-					printf("El factorial de %d = %d\n",a,fact);	
+						
 						}
+					printf("El factorial de %d = %d\n",a,fact);
 		
 		}else{
 			printf("NOT DEFINED\n");

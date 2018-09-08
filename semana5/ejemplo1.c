@@ -8,7 +8,7 @@
 	float temp_C,temp_K;
 	float Temp_C=100,final=200,delta;
 	int n=10,i;
-	int w;	
+	int w=1;	
 
 
 	printf("Bienvenido, presiona 1 para acceder\n");
@@ -21,6 +21,11 @@
 		printf("%f %f\n",temp_C,temp_K);
 		temp_C=temp_C+delta;
 	}
+		printf("¿Deseas realizar otra operación? si=1/no=2\n");
+		scanf("%i",&w);
+		
+			return 0;
 	}
+	return 0;
 }
 

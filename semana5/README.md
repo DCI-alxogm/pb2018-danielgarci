@@ -1,0 +1,1 @@
+Esta semana se aprendió a utilizar los ciclos como while y for, que permiten realizar operaciones de formsa cíclica o repetitiva siempre y cuando se cumplan las condiciones que establece el usuario, de esta forma se logran programas más complejos que pueden realizar operaciones  cada vez más elaboradas.Como es el cálculo del factorial de un número.
