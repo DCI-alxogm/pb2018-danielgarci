@@ -1,10 +1,10 @@
-#name gender age grade course
-daniel 1 24 10 1
-irving 1 18 5 1
-arturo 1 18 10 1
-ana 0 25 8 5
-karla 0 19 8 1
-vicente 1 27 10 8
-oswaldo 1 27 9 9
-karen 0 26 9 1
-alejandro 1 26 9 1
+#gender age grade course
+1 24 10 1
+1 18 5 1
+1 18 10 1
+0 25 8 5
+0 19 8 1
+1 27 10 8
+1 27 9 9
+0 26 9 1
+1 26 9 1

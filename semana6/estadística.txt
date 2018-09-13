@@ -1,0 +1,12 @@
+Promedio global                   => -214748364
+Promedio de edades global         => -214748364
+Estudiantes de 1er semestre       => 0
+Estudiantes de 2do semestre       => 0
+Estudiantes de 3er semestre       => 0
+Estudiantes de 4to semestre       => 0
+Estudiantes de 5to semestre       => 0
+Estudiantes de 6to semestre       => 0
+Estudiantes de 7mo semestre       => 0
+Estudiantes de 8vo semestre       => 0
+Estudiantes de 9no semestre       => 0
+Estudiantes de grados superiores  => 0

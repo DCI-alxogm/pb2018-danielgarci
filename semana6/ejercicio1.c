@@ -7,7 +7,7 @@ int main()
 	int average;
 	int a=10;/*reserva de memoria estatica para los arreglos*/
 	int b,c,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,o=0,p=0,q=0,r=0,s=0,t=0;/*contadores*/
-	float gender[a],age[a],grade[a],course[a];/*arreglos*/
+	float gender[10],age[10],grade[10],course[10];/*arreglos*/
 	 
 	char gen[1];
 	
