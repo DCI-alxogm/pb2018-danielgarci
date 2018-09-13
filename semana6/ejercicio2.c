@@ -21,10 +21,19 @@ int main()
 	
 	for(b=0;b<a;b++){
 		archivo=fopen("estudiantes.txt","r");
-		fscanf(archivo,"%f %f %f %f",&gender[b],&age[b],&grade[b],&course[b]);
+		fscanf(archivo,"%f",&gender[b]);
+		fscanf(archivo,"%f",&age[b]);
+		fscanf(archivo,"%f",&grade[b]);
+		fscanf(archivo,"%f",&course[b]);
+
+
 			d=age[b]+d;/*escabeo y almacenamiento de la suma de las edades en una sola varible*/
 						
 			
+				
+
+
+				
 				if(course[b]==1){
 					e=1+e;
 				}else if(course[b]==2)
