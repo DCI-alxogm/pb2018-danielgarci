@@ -6,7 +6,7 @@ int main()
 {
 	FILE *data;
 	int xi,xf,i,n,m;
-	int exp_a,log_a,sen_a,cos_a,sqrt_a,esp;
+	float exp_a,log_a,sen_a,cos_a,sqrt_a,esp;
 	
 	
 	
@@ -26,7 +26,7 @@ int main()
 
         n=(xf-xi)/m;	
   
-	data=fopen("results.txt","w");
+	
 
 /*la n dice cuantas veces se va a realizar la operacion*/
 	for(i=0;i<n;i++)
@@ -43,17 +43,22 @@ int main()
 		cos_a=cos(xi);
 		
 		sqrt_a=sqrt(xi);
-
+		xi=xi+n;
 		
+	data=fopen("results.txt","w");
+		fprintf(data,"Los resultados son:\n");
 		fprintf(data,"exp=%f \n", exp_a);
 		fprintf(data,"log=%f \n", log_a);
 		fprintf(data,"sen=%f \n", sen_a);
 		fprintf(data,"cos=%f \n", cos_a);
 		fprintf(data,"sqrt=%f \n", sqrt_a);
-		xi=xi+m;
 		
-	}
+		
+	
 	fclose(data);
+	}	
+	
+	
 
 	return 0;
 
