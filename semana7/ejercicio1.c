@@ -5,38 +5,52 @@ int main()
 
 {
 	FILE *data;
+	FILE *results;
 	int p;
 	int a;
 	int b;
 	int n;
-	int integral;
-	int func[n];
+	float integral;
+	int func;
 	int k;
-	int h;
+	float delta;
 	int i;
-	int x;
-	int min;
-	
+	float j,h;
+	int base;
+		
+
 	data=fopen("data.txt","r");
-	fscanf(data,"%i",&p);
-	fscanf(data,"%i",&a);
-	fscanf(data,"%i",&b);
-	fscanf(data,"%i",&n);
+	fscanf(data,"%i",&p);/*potencia a elevar la funcion*/
+	fscanf(data,"%i",&a);/*valor minimo*/
+	fscanf(data,"%i",&b);/*valor maximo*/
+	fscanf(data,"%i",&n);/*numero x*/
+	fscanf(data,"%i",&k);/*numero de divisiones*/	
+	fclose(data);
 	
-	x=(b-a)/n;	
-	min=a;/*mantiene el valor de a constante*/7
-	
+	delta=(b-a)/n;
+	results=fopen("results.txt","w");
+	fprintf(results,"----------------------------------------------------------------------------------------\n");
+	fprintf(results,"X     f(x)     Sf(x)\n");
+	fprintf(results,"----------------------------------------------------------------------------------------\n");
 	if(1<p<100){/*se define un valor máximo de la potencia a evaluar*/
 	
-	for(i=0;i<n;i++)/*evaluación de la función*/
+	for(i=a;i<=b;i+=delta)/*evaluación de la función*/
 		{
-			min=min+x;			
-			func=pow(x,p);	
-			h=(min-a)/k;
+						
+			func=pow(i,p);/*evaluacion de la funcion*/	
+			h=(b-a)/k;
+			integral=((pow(a,p)+pow(b,p))/2);
+			for(j=1;j<k;j++)
+				{
+					integral+=pow(a+j*h,p);
+
+				}
+			integral*=h;
 		}
 	
 
-		
+	fprintf(results,"%i     %i     %f\n",i,     func,     integral);
+
 	}else{
 	
 		printf("Not defined\n");
