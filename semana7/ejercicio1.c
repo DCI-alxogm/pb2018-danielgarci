@@ -11,12 +11,12 @@ int main()
 	int b;
 	int n;
 	float integral;
-	int func;
+	float func;
 	int k;
 	float delta;
-	int i;
+	float i;
 	float j,h;
-	int base;
+	
 		
 
 	data=fopen("data.txt","r");
@@ -36,21 +36,22 @@ int main()
 	
 	for(i=a;i<=b;i+=delta)/*evaluación de la función*/
 		{
-						
-			func=pow(i,p);/*evaluacion de la funcion*/	
-			h=(b-a)/k;
-			integral=((pow(a,p)+pow(b,p))/2);
+			func=pow(i,p);/*evaluacion de la funcion*/			
+				
+			h=(i-a)/k;/*definicion del parámetro h*/
+			integral=((pow(a,p)+pow(i,p))/2);
 			for(j=1;j<k;j++)
 				{
-					integral+=pow(a+j*h,p);
+					integral+=pow((a+j*h),p);
+					
 
 				}
 			integral*=h;
 		}
 	
 
-	fprintf(results,"%i     %i     %f\n",i,     func,     integral);
-
+	fprintf(results,"%f     %f     %f\n",i,     func,     integral);
+	fclose(results);
 	}else{
 	
 		printf("Not defined\n");

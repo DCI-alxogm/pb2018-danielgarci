@@ -1,5 +1,5 @@
-3 #potencia
+10 #potencia
 1 #min
 10 #max
 2 #x
-20 #k
+100 #k
