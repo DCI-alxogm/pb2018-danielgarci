@@ -3,7 +3,7 @@
 
 
 
-int main(int argc, char *argv[])
+int main()
 
 {
 	
@@ -23,27 +23,12 @@ int main(int argc, char *argv[])
 	int c=0;
 	FILE *results;
 	
-	if(argc==8)
-		{
-		
-		row=atof(argv[1]);
-		column=atof(argv[2]);
-		left=atof(argv[3]);
-		upper=atof(argv[4]);
-		right=atof(argv[5]);
-		lower=atof(argv[6]);
-		epsilon=atof(argv[7]);
+	data=fopen("data.dat","r");/*reading file opening*/
 
-	}else if(argc>8)
-		{
-		printf("Interface not created, too many protocols\n");
-	}else{
-		data=fopen("data.dat","r");/*reading file opening*/
-
-		fscanf(data,"%d %d %f %f %f %f %f",&row,&column,&left,&upper,&right,&lower,&epsilon);
+	fscanf(data,"%d %d %f %f %f %f %f",&row,&column,&left,&upper,&right,&lower,&epsilon);
 	
-		fclose(data);/*end of reading file*/
-	}
+	fclose(data);/*end of reading file*/
+		
 	float matrix[row][column];/*matrix definition*/
 	
 	for(i=0;i<row;i++)
@@ -176,6 +161,8 @@ int main(int argc, char *argv[])
 	
 		}
 		fclose(results);
-		
+
+
+
 return 0;
 }
