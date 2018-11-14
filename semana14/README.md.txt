@@ -1,0 +1,1 @@
+Se continuó trabajando con la estructura empleada en python, con ello se trabajó con la implementación de funciones, que nos ayudó a la simplificación del proyecto realizado en C en el primer parcial, se fijaron las ecuaciones de Euler como solución a la ecuación diferencial de segundo orden que describe el movimiento de un oscilador armónico simple. 
