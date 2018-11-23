@@ -1,0 +1,1 @@
+Esta semana se consitnuó trabajando con Python, en esta ocasión de definieron funciones que a operaron a través de los datos proporcionados a través de un archivo externo, con lo que posteriormente se reazliaron graficos en los que se oberva la a aproximación analítica que se hizo, con los datos experimentales obtenidps .
